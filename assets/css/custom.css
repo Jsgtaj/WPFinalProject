@@ -1,0 +1,270 @@
+body {
+  background-color: #eee;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+/* Header */
+.bottom-row {
+  margin: 0 10vw 0 10vw;
+  padding-bottom: calc(0.4 * var(--global--spacing-vertical));
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 5px solid var(--wp--preset--color--gray);
+}
+.bottom-row div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+header h2 {
+  margin-left: 1rem;
+}
+@media (max-width: 1028px) {
+  header h2 {
+    display: none;
+  }
+}
+header h2,
+header a {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+#logo {
+  margin: auto;
+  height: 10rem;
+  width: auto;
+  margin-top: 1rem;
+}
+#menu-main,
+#menu-shop {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+#menu-shop {
+  margin-right: 10vw;
+  justify-content: right;
+}
+#menu-main li,
+#menu-shop li {
+  margin: 0 0 0 1rem;
+}
+#menu-main a,
+#menu-shop a {
+  padding-left: 1rem;
+  text-transform: capitalize !important;
+  font-size: 2.5rem;
+  text-decoration: unset;
+}
+#menu-shop a {
+  font-size: 2rem;
+  color: var(--global--color-primary) !important;
+}
+#menu-main a:hover,
+#menu-shop a:hover,
+a:hover > header h3 {
+  color: #d22 !important;
+}
+/* Main */
+a:not(.more-link) {
+  text-decoration: none;
+}
+.entry-title,
+.page-title {
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", Arial, Helvetica, sans-serif !important;
+}
+/* Info Page */
+.masthead {
+  margin: auto;
+  max-width: 80vw;
+}
+.masthead h1 {
+  margin-left: 1.6vw;
+  padding-top: calc(0.4 * var(--global--spacing-vertical));
+  text-align: left;
+  padding-bottom: calc(0.4 * var(--global--spacing-vertical));
+}
+.masthead p {
+  margin-left: 1.6vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* Homepage */
+h2 a {
+  font-size: 5rem;
+  margin-left: 0.5rem;
+  text-decoration: unset;
+}
+h2 a:hover {
+  color: #d22;
+}
+.post-thumbnail img {
+  max-width: 256px !important;
+}
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  margin: auto;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+@media (max-width: 900px) {
+  .album-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.album-list h3,
+.news-list h3 {
+  font-size: 2rem;
+}
+.news-list .entry-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 10vw 0 10vw;
+  border: none !important;
+}
+.news-list .entry-header > a h3 {
+  margin-right: 2rem;
+  margin-top: 40px;
+}
+.album-list article a {
+  border-radius: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  background-color: #88888833;
+  text-decoration: unset;
+}
+.album-list article a:hover {
+  background-color: #88888855;
+  text-decoration: unset;
+}
+.album-list article a img {
+  margin-top: calc(1.3 * var(--global--spacing-vertical));
+  max-width: 160px !important;
+  max-height: 160px !important;
+}
+/* Album Previews */
+.album-preview {
+  margin: auto;
+  margin-top: 1rem;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: row;
+}
+.album-preview section {
+  padding: 0.58rem;
+}
+.album-preview section:first-child img {
+  width: unset !important;
+  height: unset !important;
+  max-width: 40vw !important;
+  height: auto !important;
+}
+.mejs-container {
+  width: 36vw !important;
+}
+/* Footer */
+footer {
+  margin: auto;
+  margin-top: var(--global--spacing-vertical);
+  max-width: 80vw;
+  border-top: 5px solid var(--wp--preset--color--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tweets {
+  padding: 1rem;
+}
+/* Shop */
+.product,
+#post-154,
+#post-155,
+#post-156,
+#post-0 {
+  margin: auto;
+  max-width: 78.8vw;
+}
+#post-0 h1 {
+  font-size: 4rem;
+}
+/* green -> red */
+.woocommerce ul.products li.product .price,
+.woocommerce div.product .stock,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.shop_links a,
+.product_meta a {
+  color: #d22;
+  margin-bottom: 0 !important;
+}
+/* purple, grey -> red */
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+  background-color: #d22;
+  color: #fff;
+}
+.entry-header {
+  border-bottom: none !important;
+  padding-bottom: var(--global--spacing-vertical) !important;
+  margin-bottom: 0 !important;
+}
+.woocommerce div.product form.cart {
+  margin-bottom: 0 !important;
+}
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+  width: 64px !important;
+  height: 64px !important;
+}
+.product_meta {
+  margin-top: 1rem;
+}
+.price {
+  font-size: 2rem !important;
+}
+/* REMOVED DARK MODE, WOOCOMMERCE HTML WASN'T BEING CHANGED. */
+/* Dark mode overwrites 
+.darkmode-activated span,
+.darkmode-activated .woocommerce-product-details__short-description {
+  color: #d7cfc2;
+}
+a:not(p > a) {
+  color: #d22 !important;
+}
+/* re-inverting red 
+.darkmode--activated h2 > a,
+.darkmode--activated nav ul li > a,
+.darkmode--activated h3,
+.darkmode--activated a > p,
+.darkmode--activated div > a {
+  color: #2dd !important;
+}
+*/
